@@ -52,6 +52,14 @@ for (let i = 0; i < fruits.length; i++) {
 const addFruits = document.querySelector(".addFruit");
 const addedFruits = document.querySelector(".addedFruit");
 addedFruits.addEventListener('click', function () {
-    addFruits.value += fruit
-});
+  //  fruits.push(addFruits.value)
+  fruits.push(addFruits.value);
 
+    // Add the new fruit to the fruit list
+    const newFruit = document.createElement('li');
+    newFruit.innerText = addFruits.value;
+    fruitList.appendChild(newFruit);
+
+    // Clear the input box
+    addFruits.value = "";
+  });
