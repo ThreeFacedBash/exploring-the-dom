@@ -49,9 +49,9 @@ for (let i = 0; i < fruits.length; i++) {
     fruitList.appendChild(li);
 }
 
-const addFruits = document.querySelector(".addFruits");
-const addedFruits = document.querySelector(".addedFruits");
+const addFruits = document.querySelector(".addFruit");
+const addedFruits = document.querySelector(".addedFruit");
 addedFruits.addEventListener('click', function () {
-    addFruits.value += fruits
+    addFruits.value += fruit
 });
 
